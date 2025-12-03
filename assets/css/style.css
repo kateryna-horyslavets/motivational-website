@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(#151515, #008229 155%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-generator,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 300px;
+}
+
+textarea,
+button,
+input {
+    padding: 0.75rem;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    resize: none;
+}
+
+input[type='submit']:hover {
+    background-color: #3a3a3a;
+}
+
+#widget {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.19);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+#currency_status {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.connected {
+    color: lightgreen;
+}
+
+.connecting {
+    color: yellow;
+}
+
+.disconnected {
+    color: red;
+}
+
+#price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+}
