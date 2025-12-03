@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Motivational Website</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div id="widget">
+    <div id="currency_status" class="disconnected">Disconnected</div>
+
+    <p>BTC/USDT:
+        <span id="price">-</span>
+        <span id="trend" class="disconnected">-</span>
+    </p>
+
+    <button onclick="connect()">Reconnect</button>
+</div>
+
+<section id="main">
+    <div class="content-generator">
+        <h1>Motivational Quotes Generator</h1>
+
+        <button id="generate">Generate Post</button>
+
+        <textarea id="post" rows="6" placeholder="Your generated post will appear here..."></textarea>
+
+        <button id="save">Save to Google Sheets</button>
+
+        <p id="status"></p>
+    </div>
+</section>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

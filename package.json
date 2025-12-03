@@ -1,10 +1,23 @@
 {
-  "name": "motivational-website",
+  "name": "motivational-quotes-generator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Motivational Quotes Generator with real-time BTC/USDT price widget using WebSocket API.",
+  "main": "index.html",
+  "keywords": [
+    "quotes",
+    "generator",
+    "bitcoin",
+    "websocket",
+    "vanillajs"
+  ],
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "author": "kateryna-horyslavets",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
